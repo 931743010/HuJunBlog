@@ -1,3 +1,5 @@
+<!--  只显示在文章下面的 写在这里面 -->
+
 <p>
 <h4 align="center">转载请注明出处</h4>
 <code>
@@ -6,6 +8,56 @@
 </div>
 </code>
 </p>
+
+<!-- Post Content -->
+
+{% if site.duoshuo_username %}
+<!-- 多说评论框 start -->
+
+    <div class="ds-thread"
+    data-thread-key="{{page.id}}"
+    data-title="{{page.title}}"
+    data-url="{{site.url}}{{site.baseurl}}{{page.url}}">
+
+    </div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"ioshj"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+<!-- 多说公共JS代码 end -->
+{% endif %}
+
+
+               <!-- 多说评论框 start -->
+                <!-- 多说评论框 end -->
+                <!-- disqus 评论框 start -->
+                <!-- disqus 评论框 end -->
+<!--
+                {% if site.duoshuo_username %}
+                <div class="comment">
+                    <div class="ds-thread"
+                        data-thread-key="{{page.id}}"
+                        data-title="{{page.title}}"
+                        data-url="{{site.url}}{{site.baseurl}}{{page.url}}" >
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if site.disqus_username %}
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                {% endif %} -->
+
 
 
 
