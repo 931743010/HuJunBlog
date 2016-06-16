@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。">
-    <meta name="keywords"  content="黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友">
+    <meta name="description" content="关于前端与设计、黑客与画家 | 胡俊，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux胡俊 的个人博客，与你一起发现更大的世界。">
+    <meta name="keywords"  content="胡俊, Hux胡俊, Hux, 鬼栈, huxpro, @huxpro, 胡俊的博客, Hux Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>React vs Angular 2：冰与火之歌「译」 - 黄玄的博客 | Hux Blog</title>
+    <title>React vs Angular 2：冰与火之歌「译」 - 胡俊的博客 | Hux Blog</title>
 
     <link rel="canonical" href="http://huangxuan.me/2016/02/01/React-vs-Angular2/">
 
@@ -18,18 +18,18 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/hux-blog.min.css">
+    <link rel="stylesheet" href="/css/Huj-blog.min.css">
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
 
     <!-- Custom Fonts -->
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- Hux change font-awesome CDN to qiniu -->
+    <!-- Huj change font-awesome CDN to qiniu -->
     <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
-    <!-- Hux Delete, sad but pending in China
+    <!-- Huj Delete, sad but pending in China
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
     css'>
@@ -66,25 +66,25 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="huxblog_navbar">
+        <div id="Hujblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Home</a>
                     </li>
-                    
+
                     <li>
                         <a href="/about/">About</a>
                     </li>
-                    
+
                     <li>
                         <a href="/portfolio/">Portfolio</a>
                     </li>
-                    
+
                     <li>
                         <a href="/tags/">Tags</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -98,10 +98,10 @@
     // in high-perf jank-free CSS3 implementation
     var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
-    var $navbar = document.querySelector('#huxblog_navbar');
+    var $navbar = document.querySelector('#Hujblog_navbar');
     var $collapse = document.querySelector('.navbar-collapse');
 
-    var __HuxNav__ = {
+    var __HujNav__ = {
         close: function(){
             $navbar.className = " ";
             // wait until animation end.
@@ -121,9 +121,9 @@
     // Bind Event
     $toggle.addEventListener('click', function(e){
         if ($navbar.className.indexOf('in') > 0) {
-            __HuxNav__.close()
+            __HujNav__.close()
         }else{
-            __HuxNav__.open()
+            __HujNav__.open()
         }
     })
 
@@ -134,14 +134,14 @@
      * $toggle/$collapse will break global delegation.
      *
      * Instead, we use a 'e.target' filter to prevent handler
-     * added to document close HuxNav.
+     * added to document close HujNav.
      *
      * Also, we use 'click' instead of 'touchstart' as compromise
      */
     document.addEventListener('click', function(e){
         if(e.target == $toggle) return;
         if(e.target.className == 'icon-bar') return;
-        __HuxNav__.close();
+        __HujNav__.close();
     })
 </script>
 
@@ -157,14 +157,14 @@
         background-image: url('/img/post-bg-re-vs-ng2.jpg')
     }
 
-    
+
     header.intro-header .header-mask{
         width: 100%;
         height: 100%;
         position: absolute;
         background: rgba(0,0,0, 0.3);
     }
-    
+
 </style>
 <header class="intro-header" >
     <div class="header-mask"></div>
@@ -173,20 +173,20 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <div class="tags">
-                        
+
                         <a class="tag" href="/tags/#前端开发" title="前端开发">前端开发</a>
-                        
+
                         <a class="tag" href="/tags/#JavaScript" title="JavaScript">JavaScript</a>
-                        
+
                         <a class="tag" href="/tags/#译文" title="译文">译文</a>
-                        
+
                     </div>
                     <h1>React vs Angular 2：冰与火之歌「译」</h1>
-                    
-                    
+
+
                     <h2 class="subheading">React versus Angular 2: There Will Be Blood</h2>
-                    
-                    <span class="meta">Posted by Hux on February 1, 2016</span>
+
+                    <span class="meta">Posted by Huj on February 1, 2016</span>
                 </div>
             </div>
         </div>
@@ -351,7 +351,7 @@ ngModel="myVar"  //双向数据绑定
 
 <p>React 因为语法和概念的简约而与众不同。我们不妨品味下当今流行的 JS 框架/库都是如何实现遍历的：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Ember     : 
+<div class="highlighter-rouge"><pre class="highlight"><code>Ember     :
 Angular 1 : ng-repeat
 Angular 2 : ngFor
 Knockout  : data-bind="foreach"
@@ -437,13 +437,13 @@ React     : 直接用 JS 就好啦 :)
 
 <h3 id="section-7">著作权声明</h3>
 
-<p>本文译自 <a href="https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51#.v4y4euy1r">Angular 2 versus React: There Will Be Blood</a>，其实<a href="http://www.w3ctech.com/topic/1675?from=timeline&amp;isappinstalled=0">之前有人翻译过</a>，但是翻得水平有一点不忍直视，我们不希望浪费这篇好文章。<br />
-本文由 <a href="https://www.zhihu.com/people/li-ling-hao">@李凌豪</a> <a href="https://www.zhihu.com/people/huxpro">@黄玄</a> 联合翻译，首次发布于<a href="http://zhuanlan.zhihu.com/FrontendMagazine">前端外刊评论 · 知乎专栏</a>，转载请保留原文链接 ;)</p>
+<p>本文译自 <a href="https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51#.v4y4euy1r">Angular 2 versus React: There Will Be Blood</a>，其实<a href="http://www.w3ctech.com/topic/1675?from=timeline&amp;isappinstalled=0">之前有人翻译过</a>，但是翻得水平有一点不忍直视，我们不希望浪费这篇好文章。
+本文由 <a href="https://www.zhihu.com/people/li-ling-hao">@李凌豪</a> <a href="https://www.zhihu.com/people/Hujpro">@胡俊</a> 联合翻译，首次发布于<a href="http://zhuanlan.zhihu.com/FrontendMagazine">前端外刊评论 · 知乎专栏</a>，转载请保留原文链接 ;)</p>
 
 
                 <hr>
 
-                
+
                 <!-- 多说 Share start -->
                 </style>
                 <div class="ds-share"
@@ -456,7 +456,7 @@ React     : 直接用 JS 就好啦 :)
   这篇文章转载自我在知乎专栏「前端外刊评论」上发表的文章。
 
 
-Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热门框... | 黄玄的博客 | Hux Blog " >
+Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热门框... | 胡俊的博客 | Hux Blog " >
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
                         <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
@@ -470,30 +470,30 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
                 <hr>
                 </div>
                 <!-- 多说 Share end-->
-                
+
 
 
                 <ul class="pager">
-                    
+
                     <li class="previous">
                         <a href="/2015/12/28/css-sucks-2015/" data-toggle="tooltip" data-placement="top" title="都 2015 年了，CSS 怎么还是这么糟糕">
                         Previous<br>
                         <span>都 2015 年了，CSS 怎么还是这么糟糕</span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li class="next">
                         <a href="/2016/06/05/pwa-in-my-pov/" data-toggle="tooltip" data-placement="top" title="Progressive Web App 之我见">
                         Next<br>
                         <span>Progressive Web App 之我见</span>
                         </a>
                     </li>
-                    
+
                 </ul>
 
 
-                
+
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
@@ -503,14 +503,14 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
-                
 
-                
 
-            </div>  
+
+
+            </div>
 
     <!-- Side Catalog Container -->
-        
+
             <div class="
                 col-lg-2 col-lg-offset-0
                 visible-lg-block
@@ -524,7 +524,7 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
                     <ul class="catalog-body"></ul>
                 </div>
             </div>
-        
+
 
     <!-- Sidebar Container -->
             <div class="
@@ -533,144 +533,144 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
                 sidebar-container">
 
                 <!-- Featured Tags -->
-                
+
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-        				
-                            
+
+
                 				<a href="/tags/#知乎" title="知乎" rel="7">
                                     知乎
                                 </a>
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
                 				<a href="/tags/#Android" title="Android" rel="2">
                                     Android
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#交互设计" title="交互设计" rel="4">
                                     交互设计
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#阿里巴巴" title="阿里巴巴" rel="3">
                                     阿里巴巴
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#前端开发" title="前端开发" rel="9">
                                     前端开发
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#职业病" title="职业病" rel="3">
                                     职业病
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#生活" title="生活" rel="2">
                                     生活
                                 </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#hUX 随想录" title="hUX 随想录" rel="2">
-                                    hUX 随想录
+
+
+
+
+
+
+
+
+
+                				<a href="/tags/#Huj 随想录" title="Huj 随想录" rel="2">
+                                    Huj 随想录
                                 </a>
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
                 				<a href="/tags/#UX Design" title="UX Design" rel="3">
                                     UX Design
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#OS" title="OS" rel="2">
                                     OS
                                 </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
+
+
+
+
+
+
                 				<a href="/tags/#JavaScript" title="JavaScript" rel="6">
                                     JavaScript
                                 </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
+
+
+
+
+
+
+
+
                 				<a href="/tags/#译文" title="译文" rel="2">
                                     译文
                                 </a>
-                            
-        				
-                            
-        				
+
+
+
+
         			</div>
                 </section>
-                
+
 
                 <!-- Friends Blog -->
-                
+
                 <hr>
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
-                    
+
                         <li><a href="http://qianduan.guru/">前端外刊评论</a></li>
-                    
+
                         <li><a href="http://lingyu.wang/">天镶的博客</a></li>
-                    
+
                         <li><a href="http://hmqk1995.github.io">Luke的自留地</a></li>
-                    
+
                         <li><a href="http://ebnbin.com/">Ebn's Blog</a></li>
-                    
+
                         <li><a href="http://blog.smdcn.net">SmdCn's Blog</a></li>
-                    
+
                         <li><a href="http://xieminis.me/">解旻的博客</a></li>
-                    
+
                         <li><a href="http://dhong.co">DHong Say</a></li>
-                    
+
                         <li><a href="http://ingf.github.io/">尹峰以为</a></li>
-                    
+
                         <li><a href="http://wepiaofei.github.io/blog/">前端神盾局</a></li>
-                    
+
                 </ul>
-                
+
             </div>
         </div>
     </div>
@@ -680,7 +680,7 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _user = 'huxblog';
 
     // duoshuo comment query.
@@ -737,17 +737,18 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
 </style>
 
 
+
     <!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-                    
-                    
 
-                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
-                    
+
+
+                    <!-- add Weibo, Zhihu by Huj, add target = "_blank" to <a> by Huj -->
+
                     <li>
                         <a target="_blank" href="https://www.zhihu.com/people/huxpro">
                             <span class="fa-stack fa-lg">
@@ -756,8 +757,8 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li>
                         <a target="_blank" href="http://weibo.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -766,10 +767,10 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
                             </span>
                         </a>
                     </li>
-                    
 
 
-                    
+
+
                     <li>
                         <a target="_blank" href="https://www.facebook.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -778,8 +779,8 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li>
                         <a target="_blank" href="https://github.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -788,17 +789,17 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                 </ul>
                 <p class="copyright text-muted">
                     Copyright &copy; Huj Blog 2016
                     <br>
-                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    Theme by <a href="http://huangxuan.me">Huj</a> |
                     <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"
                         frameborder="0" scrolling="0" width="91px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                        src="https://ghbtns.com/github-btn.html?user=Hujpro&repo=Hujpro.github.io&type=star&count=true" >
                     </iframe>
                 </p>
             </div>
@@ -813,7 +814,7 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
 <script src="/js/bootstrap.min.js "></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="/js/hux-blog.min.js "></script>
+<script src="/js/Huj-blog.min.js "></script>
 
 
 <!-- async load function -->
@@ -828,15 +829,15 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
     }
 </script>
 
-<!-- 
-     Because of the native support for backtick-style fenced code blocks 
-     right within the Markdown is landed in Github Pages, 
-     From V1.6, There is no need for Highlight.js, 
-     so Huxblog drops it officially.
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Hujblog drops it officially.
 
-     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
-     - https://help.github.com/articles/creating-and-highlighting-code-blocks/ 
-     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers   
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
 -->
 <!--
     <script>
@@ -874,7 +875,7 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
 <!-- Google Analytics -->
 
 <script>
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _gaId = 'UA-49627206-1';
     var _gaDomain = 'huangxuan.me';
 
@@ -893,7 +894,7 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
 <!-- Baidu Tongji -->
 
 <script>
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _baId = '4cc1f2d8f3067386cc5cdb626a202900';
 
     // Originial
@@ -923,7 +924,7 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
             l = $('<li class="'+n+'_nav"></li>').append(c);
             $(selector).append(l);
         });
-        return true;    
+        return true;
     }
 
     generateCatalog(".catalog-body");
@@ -936,7 +937,7 @@ Angular 2 已经发布 Beta 版，而且似乎很有信心在 2016 年成为热�
 
     /*
      * Doc: https://github.com/davist11/jQuery-One-Page-Nav
-     * Fork by Hux to support padding
+     * Fork by Huj to support padding
      */
     async("/js/jquery.nav.js", function () {
         $('.catalog-body').onePageNav({

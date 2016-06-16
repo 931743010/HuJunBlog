@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。">
-    <meta name="keywords"  content="黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友">
+    <meta name="description" content="关于前端与设计、黑客与画家 | 胡俊，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux胡俊 的个人博客，与你一起发现更大的世界。">
+    <meta name="keywords"  content="胡俊, Hux胡俊, Hux, 鬼栈, huxpro, @huxpro, 胡俊的博客, Hux Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Hello 2015 - 黄玄的博客 | Hux Blog</title>
+    <title>Hello 2015 - 胡俊的博客 | Hux Blog</title>
 
     <link rel="canonical" href="http://huangxuan.me/2015/01/29/hello-2015/">
 
@@ -18,18 +18,18 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/hux-blog.min.css">
+    <link rel="stylesheet" href="/css/Huj-blog.min.css">
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
 
     <!-- Custom Fonts -->
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- Hux change font-awesome CDN to qiniu -->
+    <!-- Huj change font-awesome CDN to qiniu -->
     <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
-    <!-- Hux Delete, sad but pending in China
+    <!-- Huj Delete, sad but pending in China
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
     css'>
@@ -66,25 +66,25 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="huxblog_navbar">
+        <div id="Hujblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Home</a>
                     </li>
-                    
+
                     <li>
                         <a href="/about/">About</a>
                     </li>
-                    
+
                     <li>
                         <a href="/portfolio/">Portfolio</a>
                     </li>
-                    
+
                     <li>
                         <a href="/tags/">Tags</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -98,10 +98,10 @@
     // in high-perf jank-free CSS3 implementation
     var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
-    var $navbar = document.querySelector('#huxblog_navbar');
+    var $navbar = document.querySelector('#Hujblog_navbar');
     var $collapse = document.querySelector('.navbar-collapse');
 
-    var __HuxNav__ = {
+    var __HujNav__ = {
         close: function(){
             $navbar.className = " ";
             // wait until animation end.
@@ -121,9 +121,9 @@
     // Bind Event
     $toggle.addEventListener('click', function(e){
         if ($navbar.className.indexOf('in') > 0) {
-            __HuxNav__.close()
+            __HujNav__.close()
         }else{
-            __HuxNav__.open()
+            __HujNav__.open()
         }
     })
 
@@ -134,14 +134,14 @@
      * $toggle/$collapse will break global delegation.
      *
      * Instead, we use a 'e.target' filter to prevent handler
-     * added to document close HuxNav.
+     * added to document close HujNav.
      *
      * Also, we use 'click' instead of 'touchstart' as compromise
      */
     document.addEventListener('click', function(e){
         if(e.target == $toggle) return;
         if(e.target.className == 'icon-bar') return;
-        __HuxNav__.close();
+        __HujNav__.close();
     })
 </script>
 
@@ -157,7 +157,7 @@
         background-image: url('/img/post-bg-2015.jpg')
     }
 
-    
+
 </style>
 <header class="intro-header" >
     <div class="header-mask"></div>
@@ -166,16 +166,16 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <div class="tags">
-                        
+
                         <a class="tag" href="/tags/#生活" title="生活">生活</a>
-                        
+
                     </div>
                     <h1>Hello 2015</h1>
-                    
-                    
+
+
                     <h2 class="subheading"> "Hello World, Hello Blog"</h2>
-                    
-                    <span class="meta">Posted by Hux on January 29, 2015</span>
+
+                    <span class="meta">Posted by Huj on January 29, 2015</span>
                 </div>
             </div>
         </div>
@@ -199,11 +199,11 @@
 
 <h2 id="section">前言</h2>
 
-<p>Hux 的 Blog 就这么开通了。</p>
+<p>Huj 的 Blog 就这么开通了。</p>
 
 <p><a href="#build">跳过废话，直接看技术实现 </a></p>
 
-<p>2015 年，Hux 总算有个地方可以好好写点东西了。</p>
+<p>2015 年，Huj 总算有个地方可以好好写点东西了。</p>
 
 <p>作为一个程序员， Blog 这种轮子要是挂在大众博客程序上就太没意思了。一是觉得大部分 Blog 服务都太丑，二是觉得不能随便定制不好玩。之前因为太懒没有折腾，结果就一直连个写 Blog 的地儿都没有。</p>
 
@@ -231,9 +231,9 @@
   <li>Jekyll 的自定制非常容易，基本就是个模版引擎</li>
 </ul>
 
-<p>本来觉得最大的缺点可能是 GitHub 在国内访问起来太慢，所以第二天一起床就到 GitCafe(Chinese GitHub Copy，现在被 Coding 收购了) 迁移了一个<a href="http://huxpro.coding.me">镜像</a>出来，结果还是巨慢。</p>
+<p>本来觉得最大的缺点可能是 GitHub 在国内访问起来太慢，所以第二天一起床就到 GitCafe(Chinese GitHub Copy，现在被 Coding 收购了) 迁移了一个<a href="http://Hujpro.coding.me">镜像</a>出来，结果还是巨慢。</p>
 
-<p>哥哥可是个前端好嘛！ 果断开 Chrome DevTool 查了下网络请求，原来是 <strong>pending 在了 Google Fonts</strong> 上，页面渲染一直被阻塞到请求超时为止，难怪这么慢。<br />
+<p>哥哥可是个前端好嘛！ 果断开 Chrome DevTool 查了下网络请求，原来是 <strong>pending 在了 Google Fonts</strong> 上，页面渲染一直被阻塞到请求超时为止，难怪这么慢。
 忍痛割爱，只好把 Web Fonts 去了（反正超时看到的也只能是 fallback ），果然一下就正常了，而且 GitHub 和 GitCafe 对比并没有感受到明显的速度差异，虽然 github 的 ping 值明显要高一些，达到了 300ms，于是用 DNSPOD 优化了一下速度。</p>
 
 <hr />
@@ -258,13 +258,13 @@
 
 <p>如果你恰好逛到了这里，希望你也能喜欢这个博客主题。</p>
 
-<p>—— Hux 后记于 2015.10</p>
+<p>—— Huj 后记于 2015.10</p>
 
 
 
                 <hr>
 
-                
+
                 <!-- 多说 Share start -->
                 </style>
                 <div class="ds-share"
@@ -279,11 +279,11 @@
 
 前言
 
-Hux 的 Blog 就这么开通了。
+Huj 的 Blog 就这么开通了。
 
-跳过废话，直接看技术实现 
+跳过废话，直接看技术实现
 
-2015 年，Hux 总算有个地... | 黄玄的博客 | Hux Blog " >
+2015 年，Huj 总算有个地... | 胡俊的博客 | Hux Blog " >
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
                         <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
@@ -297,30 +297,30 @@ Hux 的 Blog 就这么开通了。
                 <hr>
                 </div>
                 <!-- 多说 Share end-->
-                
+
 
 
                 <ul class="pager">
-                    
+
                     <li class="previous">
                         <a href="/2014/12/13/wechat-block-kuaidi/" data-toggle="tooltip" data-placement="top" title="「知乎」如何看待微信屏蔽快的打车事件？">
                         Previous<br>
                         <span>「知乎」如何看待微信屏蔽快的打车事件？</span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li class="next">
                         <a href="/2015/03/10/apple-event-2015/" data-toggle="tooltip" data-placement="top" title="「知乎」如何评价 2015 年 3 月 9 日 Apple 春季发布会？">
                         Next<br>
                         <span>「知乎」如何评价 2015 年 3 月 9 日 Apple 春季发布会？</span>
                         </a>
                     </li>
-                    
+
                 </ul>
 
 
-                
+
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
@@ -330,14 +330,14 @@ Hux 的 Blog 就这么开通了。
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
-                
 
-                
 
-            </div>  
+
+
+            </div>
 
     <!-- Side Catalog Container -->
-        
+
             <div class="
                 col-lg-2 col-lg-offset-0
                 visible-lg-block
@@ -351,7 +351,7 @@ Hux 的 Blog 就这么开通了。
                     <ul class="catalog-body"></ul>
                 </div>
             </div>
-        
+
 
     <!-- Sidebar Container -->
             <div class="
@@ -360,144 +360,144 @@ Hux 的 Blog 就这么开通了。
                 sidebar-container">
 
                 <!-- Featured Tags -->
-                
+
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-        				
-                            
+
+
                 				<a href="/tags/#知乎" title="知乎" rel="7">
                                     知乎
                                 </a>
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
                 				<a href="/tags/#Android" title="Android" rel="2">
                                     Android
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#交互设计" title="交互设计" rel="4">
                                     交互设计
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#阿里巴巴" title="阿里巴巴" rel="3">
                                     阿里巴巴
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#前端开发" title="前端开发" rel="9">
                                     前端开发
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#职业病" title="职业病" rel="3">
                                     职业病
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#生活" title="生活" rel="2">
                                     生活
                                 </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#hUX 随想录" title="hUX 随想录" rel="2">
-                                    hUX 随想录
+
+
+
+
+
+
+
+
+
+                				<a href="/tags/#Huj 随想录" title="Huj 随想录" rel="2">
+                                    Huj 随想录
                                 </a>
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
                 				<a href="/tags/#UX Design" title="UX Design" rel="3">
                                     UX Design
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#OS" title="OS" rel="2">
                                     OS
                                 </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
+
+
+
+
+
+
                 				<a href="/tags/#JavaScript" title="JavaScript" rel="6">
                                     JavaScript
                                 </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
+
+
+
+
+
+
+
+
                 				<a href="/tags/#译文" title="译文" rel="2">
                                     译文
                                 </a>
-                            
-        				
-                            
-        				
+
+
+
+
         			</div>
                 </section>
-                
+
 
                 <!-- Friends Blog -->
-                
+
                 <hr>
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
-                    
+
                         <li><a href="http://qianduan.guru/">前端外刊评论</a></li>
-                    
+
                         <li><a href="http://lingyu.wang/">天镶的博客</a></li>
-                    
+
                         <li><a href="http://hmqk1995.github.io">Luke的自留地</a></li>
-                    
+
                         <li><a href="http://ebnbin.com/">Ebn's Blog</a></li>
-                    
+
                         <li><a href="http://blog.smdcn.net">SmdCn's Blog</a></li>
-                    
+
                         <li><a href="http://xieminis.me/">解旻的博客</a></li>
-                    
+
                         <li><a href="http://dhong.co">DHong Say</a></li>
-                    
+
                         <li><a href="http://ingf.github.io/">尹峰以为</a></li>
-                    
+
                         <li><a href="http://wepiaofei.github.io/blog/">前端神盾局</a></li>
-                    
+
                 </ul>
-                
+
             </div>
         </div>
     </div>
@@ -507,7 +507,7 @@ Hux 的 Blog 就这么开通了。
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _user = 'huxblog';
 
     // duoshuo comment query.
@@ -564,17 +564,18 @@ Hux 的 Blog 就这么开通了。
 </style>
 
 
+
     <!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-                    
-                    
 
-                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
-                    
+
+
+                    <!-- add Weibo, Zhihu by Huj, add target = "_blank" to <a> by Huj -->
+
                     <li>
                         <a target="_blank" href="https://www.zhihu.com/people/huxpro">
                             <span class="fa-stack fa-lg">
@@ -583,8 +584,8 @@ Hux 的 Blog 就这么开通了。
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li>
                         <a target="_blank" href="http://weibo.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -593,10 +594,10 @@ Hux 的 Blog 就这么开通了。
                             </span>
                         </a>
                     </li>
-                    
 
 
-                    
+
+
                     <li>
                         <a target="_blank" href="https://www.facebook.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -605,8 +606,8 @@ Hux 的 Blog 就这么开通了。
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li>
                         <a target="_blank" href="https://github.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -615,17 +616,17 @@ Hux 的 Blog 就这么开通了。
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                 </ul>
                 <p class="copyright text-muted">
                     Copyright &copy; Huj Blog 2016
                     <br>
-                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    Theme by <a href="http://huangxuan.me">Huj</a> |
                     <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"
                         frameborder="0" scrolling="0" width="91px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                        src="https://ghbtns.com/github-btn.html?user=Hujpro&repo=Hujpro.github.io&type=star&count=true" >
                     </iframe>
                 </p>
             </div>
@@ -640,7 +641,7 @@ Hux 的 Blog 就这么开通了。
 <script src="/js/bootstrap.min.js "></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="/js/hux-blog.min.js "></script>
+<script src="/js/Huj-blog.min.js "></script>
 
 
 <!-- async load function -->
@@ -655,15 +656,15 @@ Hux 的 Blog 就这么开通了。
     }
 </script>
 
-<!-- 
-     Because of the native support for backtick-style fenced code blocks 
-     right within the Markdown is landed in Github Pages, 
-     From V1.6, There is no need for Highlight.js, 
-     so Huxblog drops it officially.
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Hujblog drops it officially.
 
-     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
-     - https://help.github.com/articles/creating-and-highlighting-code-blocks/ 
-     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers   
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
 -->
 <!--
     <script>
@@ -701,7 +702,7 @@ Hux 的 Blog 就这么开通了。
 <!-- Google Analytics -->
 
 <script>
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _gaId = 'UA-49627206-1';
     var _gaDomain = 'huangxuan.me';
 
@@ -720,7 +721,7 @@ Hux 的 Blog 就这么开通了。
 <!-- Baidu Tongji -->
 
 <script>
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _baId = '4cc1f2d8f3067386cc5cdb626a202900';
 
     // Originial
@@ -750,7 +751,7 @@ Hux 的 Blog 就这么开通了。
             l = $('<li class="'+n+'_nav"></li>').append(c);
             $(selector).append(l);
         });
-        return true;    
+        return true;
     }
 
     generateCatalog(".catalog-body");
@@ -763,7 +764,7 @@ Hux 的 Blog 就这么开通了。
 
     /*
      * Doc: https://github.com/davist11/jQuery-One-Page-Nav
-     * Fork by Hux to support padding
+     * Fork by Huj to support padding
      */
     async("/js/jquery.nav.js", function () {
         $('.catalog-body').onePageNav({

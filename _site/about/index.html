@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。">
-    <meta name="keywords"  content="黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友">
+    <meta name="description" content="关于前端与设计、黑客与画家 | 胡俊，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux胡俊 的个人博客，与你一起发现更大的世界。">
+    <meta name="keywords"  content="胡俊, Hux胡俊, Hux, 鬼栈, huxpro, @huxpro, 胡俊的博客, Hux Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>About - 黄玄的博客 | Hux Blog</title>
+    <title>About - 胡俊的博客 | Hux Blog</title>
 
     <link rel="canonical" href="http://huangxuan.me/about/">
 
@@ -18,18 +18,18 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/hux-blog.min.css">
+    <link rel="stylesheet" href="/css/Huj-blog.min.css">
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
 
     <!-- Custom Fonts -->
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- Hux change font-awesome CDN to qiniu -->
+    <!-- Huj change font-awesome CDN to qiniu -->
     <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
-    <!-- Hux Delete, sad but pending in China
+    <!-- Huj Delete, sad but pending in China
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
     css'>
@@ -66,25 +66,25 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="huxblog_navbar">
+        <div id="Hujblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Home</a>
                     </li>
-                    
+
                     <li>
                         <a href="/about/">About</a>
                     </li>
-                    
+
                     <li>
                         <a href="/portfolio/">Portfolio</a>
                     </li>
-                    
+
                     <li>
                         <a href="/tags/">Tags</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -98,10 +98,10 @@
     // in high-perf jank-free CSS3 implementation
     var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
-    var $navbar = document.querySelector('#huxblog_navbar');
+    var $navbar = document.querySelector('#Hujblog_navbar');
     var $collapse = document.querySelector('.navbar-collapse');
 
-    var __HuxNav__ = {
+    var __HujNav__ = {
         close: function(){
             $navbar.className = " ";
             // wait until animation end.
@@ -121,9 +121,9 @@
     // Bind Event
     $toggle.addEventListener('click', function(e){
         if ($navbar.className.indexOf('in') > 0) {
-            __HuxNav__.close()
+            __HujNav__.close()
         }else{
-            __HuxNav__.open()
+            __HujNav__.open()
         }
     })
 
@@ -134,14 +134,14 @@
      * $toggle/$collapse will break global delegation.
      *
      * Instead, we use a 'e.target' filter to prevent handler
-     * added to document close HuxNav.
+     * added to document close HujNav.
      *
      * Also, we use 'click' instead of 'touchstart' as compromise
      */
     document.addEventListener('click', function(e){
         if(e.target == $toggle) return;
         if(e.target.className == 'icon-bar') return;
-        __HuxNav__.close();
+        __HujNav__.close();
     })
 </script>
 
@@ -154,7 +154,7 @@
                 <div class="site-heading">
                     <h1>About</h1>
                     <!--<hr class="small">-->
-                    <span class="subheading">Hey, this is Hux.</span>
+                    <span class="subheading">Hey, this is Huj.</span>
                 </div>
             </div>
         </div>
@@ -164,7 +164,7 @@
 <!-- Main Content -->
 <div class="container">
 	<div class="row">
-        
+
 
 <!-- USE SIDEBAR -->
     <!-- PostList Container -->
@@ -188,9 +188,9 @@
     <blockquote><p>写写代码，做做设计，看看产品。<br>
     世界那么大，我想去看看。</p></blockquote>
 
-    <p>Hey，我是<strong>黄玄</strong>，程序员 &amp; 设计师，<a href="http://https://zhuanlan.zhihu.com/p/21280918">演说.io</a> 作者，前淘宝网 · <a href="http://alitrip.com">阿里旅行·去啊</a>前端团队资深实习生，<a href="http://by.cuc.edu.cn/">中国传媒大学</a> · 数字媒体艺术 2012 级。目前任职于微影时代 · 微票儿，负责<a href="http://wepiaoFEI.github.io">前端基础工程团队</a>。</p>
+    <p>Hey，我是<strong>胡俊</strong>，程序员 &amp; 设计师，<a href="http://https://zhuanlan.zhihu.com/p/21280918">演说.io</a> 作者，前淘宝网 · <a href="http://alitrip.com">阿里旅行·去啊</a>前端团队资深实习生，<a href="http://by.cuc.edu.cn/">中国传媒大学</a> · 数字媒体艺术 2012 级。目前任职于微影时代 · 微票儿，负责<a href="http://wepiaoFEI.github.io">前端基础工程团队</a>。</p>
 
-    <p>一些作品和开源项目，👉 戳 <a href="/portfolio">Portfolio</a> 与 <a href="http://github.com/huxpro">Github</a>；除了在博客写点东西外，我也是 <a href="http://www.gfansub.com/">GDG 字幕组</a>的译者之一、<a href="http://zhuanlan.zhihu.com/FrontendMagazine">前端外刊评论 · 知乎专栏</a>的维护译者之一、<a href="http://zhuanlan.zhihu.com/huxblog">知乎专栏 · 一生想做浪漫极客</a> 的创办者。</p>
+    <p>一些作品和开源项目，👉 戳 <a href="/portfolio">Portfolio</a> 与 <a href="http://github.com/Hujpro">Github</a>；除了在博客写点东西外，我也是 <a href="http://www.gfansub.com/">GDG 字幕组</a>的译者之一、<a href="http://zhuanlan.zhihu.com/FrontendMagazine">前端外刊评论 · 知乎专栏</a>的维护译者之一、<a href="http://zhuanlan.zhihu.com/Hujblog">知乎专栏 · 一生想做浪漫极客</a> 的创办者。</p>
 
     <h5>Talks</h5>
 
@@ -203,8 +203,8 @@
     <h5>Resumes</h5>
 
     <ul>
-    <li><a href="/attach/2016_Hux_en_SE.pdf">2016_Hux_en_SE &amp; FE</a></li>
-    <li><a href="attach/2016_Hux_en_PD.pdf">2016_Hux_en_PD &amp; UX</a></li>
+    <li><a href="/attach/2016_Huj_en_SE.pdf">2016_Huj_en_SE &amp; FE</a></li>
+    <li><a href="attach/2016_Huj_en_PD.pdf">2016_Huj_en_PD &amp; UX</a></li>
     </ul>
 
 </div>
@@ -214,11 +214,11 @@
     <blockquote><p>Yet another Frontend Engineer. <br>
     Yet another Lifelong Designer.</p></blockquote>
 
-    <p>Hi, Here is <strong>Huang Xuan(黄玄)</strong>，you can call me nickname <strong>Hux</strong>. I'm engineer &amp; designer who is loving to build software such as <a href="http://yanshuo.io">Yanshuo.io</a> and more (<a href="/portfolio">Portfolio 👉 </a> and <a href="http://github.com/huxpro">Github 👉 </a>). I studied Digital Media Art at <a href="https://en.wikipedia.org/wiki/Communication_University_of_China">Communication University of China</a> class of 2016.</p>
+    <p>Hi, Here is <strong>Huang Xuan(胡俊)</strong>，you can call me nickname <strong>Huj</strong>. I'm engineer &amp; designer who is loving to build software such as <a href="http://yanshuo.io">Yanshuo.io</a> and more (<a href="/portfolio">Portfolio 👉 </a> and <a href="http://github.com/Hujpro">Github 👉 </a>). I studied Digital Media Art at <a href="https://en.wikipedia.org/wiki/Communication_University_of_China">Communication University of China</a> class of 2016.</p>
 
     <p>As a engineer, I work at Wepiao (<a href="https://www.crunchbase.com/organization/wepiao#/entity">see CrunchBase</a>) as the dev lead of Front-End Infrastructure Team currently, and <a href="https://www.alitrip.com/">Alibaba Trip</a> as Intern for one year previously. As a designer, I am ever offered as UI/UX Designer Intern by Alibaba, Microsoft etc.</p>
 
-    <p>More than a blogger, I'm also translator at <a href="http://www.gfansub.com/">GDG China Subtitle Team</a>, maintainer at <a href="http://zhuanlan.zhihu.com/FrontendMagazine">Frontend Magazine</a> and owner of <a href="http://zhuanlan.zhihu.com/huxblog">Lifelong Romantic Geek</a>.</p>
+    <p>More than a blogger, I'm also translator at <a href="http://www.gfansub.com/">GDG China Subtitle Team</a>, maintainer at <a href="http://zhuanlan.zhihu.com/FrontendMagazine">Frontend Magazine</a> and owner of <a href="http://zhuanlan.zhihu.com/Hujblog">Lifelong Romantic Geek</a>.</p>
 
     <h5>Talks</h5>
 
@@ -231,8 +231,8 @@
     <h5>Resumes</h5>
 
     <ul>
-    <li><a href="/attach/2016_Hux_en_SE.pdf">2016_Hux_en_SE &amp; FE</a></li>
-    <li><a href="attach/2016_Hux_en_PD.pdf">2016_Hux_en_PD &amp; UX</a></li>
+    <li><a href="/attach/2016_Huj_en_SE.pdf">2016_Huj_en_SE &amp; FE</a></li>
+    <li><a href="attach/2016_Huj_en_PD.pdf">2016_Huj_en_PD &amp; UX</a></li>
     </ul>
 </div>
 
@@ -282,9 +282,9 @@
 <!-- 多说评论框 start -->
 <div class="comment">
     <div class="ds-thread"
-    
-        data-thread-id="1187623191091085319"
-    
+
+        data-thread-key="huxblog/about"
+
 
     data-title="About"
     data-url="http://huangxuan.me/about/"></div>
@@ -293,7 +293,7 @@
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-    // dynamic User hacking by Hux
+    // dynamic User hacking by Huj
     var _user = 'huxblog';
 
     // duoshuo comment query.
@@ -323,133 +323,133 @@
                 sidebar-container
             ">
                 <!-- Featured Tags -->
-                
+
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        
-                            
+
+
                                 <a href="/tags/#知乎" title="知乎" rel="7">
                                     知乎
                                 </a>
-                            
-                        
-                            
-                        
-                            
+
+
+
+
+
                                 <a href="/tags/#Android" title="Android" rel="2">
                                     Android
                                 </a>
-                            
-                        
-                            
+
+
+
                                 <a href="/tags/#交互设计" title="交互设计" rel="4">
                                     交互设计
                                 </a>
-                            
-                        
-                            
+
+
+
                                 <a href="/tags/#阿里巴巴" title="阿里巴巴" rel="3">
                                     阿里巴巴
                                 </a>
-                            
-                        
-                            
+
+
+
                                 <a href="/tags/#前端开发" title="前端开发" rel="9">
                                     前端开发
                                 </a>
-                            
-                        
-                            
+
+
+
                                 <a href="/tags/#职业病" title="职业病" rel="3">
                                     职业病
                                 </a>
-                            
-                        
-                            
+
+
+
                                 <a href="/tags/#生活" title="生活" rel="2">
                                     生活
                                 </a>
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                                <a href="/tags/#hUX 随想录" title="hUX 随想录" rel="2">
-                                    hUX 随想录
+
+
+
+
+
+
+
+
+
+                                <a href="/tags/#Huj 随想录" title="Huj 随想录" rel="2">
+                                    Huj 随想录
                                 </a>
-                            
-                        
-                            
-                        
-                            
+
+
+
+
+
                                 <a href="/tags/#UX Design" title="UX Design" rel="3">
                                     UX Design
                                 </a>
-                            
-                        
-                            
+
+
+
                                 <a href="/tags/#OS" title="OS" rel="2">
                                     OS
                                 </a>
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
+
+
+
+
+
+
+
+
+
+
+
                                 <a href="/tags/#JavaScript" title="JavaScript" rel="6">
                                     JavaScript
                                 </a>
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
+
+
+
+
+
+
+
+
+
+
+
+
+
                                 <a href="/tags/#译文" title="译文" rel="2">
                                     译文
                                 </a>
-                            
-                        
-                            
-                        
+
+
+
+
                     </div>
                 </section>
-                
+
 
                 <!-- Short About -->
                 <section class="visible-md visible-lg">
                     <hr><h5><a href="/about/">ABOUT ME</a></h5>
                     <div class="short-about">
-                        
+
                             <img src="/img/avatar-hux.jpg" />
-                        
-                        
+
+
                             <p>写写代码，做做设计，看看产品。世界那么大，我想去看看。</p>
-                        
+
                         <!-- SNS Link -->
                         <ul class="list-inline">
-                            
-                            
-                            
+
+
+
                             <li>
                                 <a target="_blank" href="https://www.zhihu.com/people/huxpro">
                                     <span class="fa-stack fa-lg">
@@ -458,8 +458,8 @@
                                     </span>
                                 </a>
                             </li>
-                            
-                            
+
+
                             <li>
                                 <a target="_blank" href="http://weibo.com/huxpro">
                                     <span class="fa-stack fa-lg">
@@ -468,8 +468,8 @@
                                     </span>
                                 </a>
                             </li>
-                            
-                            
+
+
                             <li>
                                 <a target="_blank" href="https://www.facebook.com/huxpro">
                                     <span class="fa-stack fa-lg">
@@ -478,8 +478,8 @@
                                     </span>
                                 </a>
                             </li>
-                            
-                            
+
+
                             <li>
                                 <a target="_blank" href="https://github.com/huxpro">
                                     <span class="fa-stack fa-lg">
@@ -488,39 +488,39 @@
                                     </span>
                                 </a>
                             </li>
-                            
-                            
+
+
                         </ul>
                     </div>
                 </section>
                 <!-- Friends Blog -->
-                
+
                 <hr>
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
-                    
+
                         <li><a href="http://qianduan.guru/">前端外刊评论</a></li>
-                    
+
                         <li><a href="http://lingyu.wang/">天镶的博客</a></li>
-                    
+
                         <li><a href="http://hmqk1995.github.io">Luke的自留地</a></li>
-                    
+
                         <li><a href="http://ebnbin.com/">Ebn's Blog</a></li>
-                    
+
                         <li><a href="http://blog.smdcn.net">SmdCn's Blog</a></li>
-                    
+
                         <li><a href="http://xieminis.me/">解旻的博客</a></li>
-                    
+
                         <li><a href="http://dhong.co">DHong Say</a></li>
-                    
+
                         <li><a href="http://ingf.github.io/">尹峰以为</a></li>
-                    
+
                         <li><a href="http://wepiaofei.github.io/blog/">前端神盾局</a></li>
-                    
+
                 </ul>
-                
+
     		</div>
-        
+
 	</div>
 </div>
 
@@ -531,11 +531,11 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-                    
-                    
 
-                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
-                    
+
+
+                    <!-- add Weibo, Zhihu by Huj, add target = "_blank" to <a> by Huj -->
+
                     <li>
                         <a target="_blank" href="https://www.zhihu.com/people/huxpro">
                             <span class="fa-stack fa-lg">
@@ -544,8 +544,8 @@
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li>
                         <a target="_blank" href="http://weibo.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -554,10 +554,10 @@
                             </span>
                         </a>
                     </li>
-                    
 
 
-                    
+
+
                     <li>
                         <a target="_blank" href="https://www.facebook.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -566,8 +566,8 @@
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li>
                         <a target="_blank" href="https://github.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -576,17 +576,17 @@
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                 </ul>
                 <p class="copyright text-muted">
                     Copyright &copy; Huj Blog 2016
                     <br>
-                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    Theme by <a href="http://huangxuan.me">Huj</a> |
                     <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"
                         frameborder="0" scrolling="0" width="91px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                        src="https://ghbtns.com/github-btn.html?user=Hujpro&repo=Hujpro.github.io&type=star&count=true" >
                     </iframe>
                 </p>
             </div>
@@ -601,7 +601,7 @@
 <script src="/js/bootstrap.min.js "></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="/js/hux-blog.min.js "></script>
+<script src="/js/Huj-blog.min.js "></script>
 
 
 <!-- async load function -->
@@ -616,15 +616,15 @@
     }
 </script>
 
-<!-- 
-     Because of the native support for backtick-style fenced code blocks 
-     right within the Markdown is landed in Github Pages, 
-     From V1.6, There is no need for Highlight.js, 
-     so Huxblog drops it officially.
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Hujblog drops it officially.
 
-     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
-     - https://help.github.com/articles/creating-and-highlighting-code-blocks/ 
-     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers   
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
 -->
 <!--
     <script>
@@ -662,7 +662,7 @@
 <!-- Google Analytics -->
 
 <script>
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _gaId = 'UA-49627206-1';
     var _gaDomain = 'huangxuan.me';
 
@@ -681,7 +681,7 @@
 <!-- Baidu Tongji -->
 
 <script>
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _baId = '4cc1f2d8f3067386cc5cdb626a202900';
 
     // Originial

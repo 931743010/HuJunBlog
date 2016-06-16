@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。">
-    <meta name="keywords"  content="黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友">
+    <meta name="description" content="关于前端与设计、黑客与画家 | 胡俊，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux胡俊 的个人博客，与你一起发现更大的世界。">
+    <meta name="keywords"  content="胡俊, Hux胡俊, Hux, 鬼栈, huxpro, @huxpro, 胡俊的博客, Hux Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>hUX 随想录（一）：Digital native 数字原住民 - 黄玄的博客 | Hux Blog</title>
+    <title>Huj 随想录（一）：Digital native 数字原住民 - 胡俊的博客 | Hux Blog</title>
 
     <link rel="canonical" href="http://huangxuan.me/2015/03/25/digital-native/">
 
@@ -18,18 +18,18 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/hux-blog.min.css">
+    <link rel="stylesheet" href="/css/Huj-blog.min.css">
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
 
     <!-- Custom Fonts -->
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- Hux change font-awesome CDN to qiniu -->
+    <!-- Huj change font-awesome CDN to qiniu -->
     <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
-    <!-- Hux Delete, sad but pending in China
+    <!-- Huj Delete, sad but pending in China
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
     css'>
@@ -66,25 +66,25 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="huxblog_navbar">
+        <div id="Hujblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Home</a>
                     </li>
-                    
+
                     <li>
                         <a href="/about/">About</a>
                     </li>
-                    
+
                     <li>
                         <a href="/portfolio/">Portfolio</a>
                     </li>
-                    
+
                     <li>
                         <a href="/tags/">Tags</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -98,10 +98,10 @@
     // in high-perf jank-free CSS3 implementation
     var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
-    var $navbar = document.querySelector('#huxblog_navbar');
+    var $navbar = document.querySelector('#Hujblog_navbar');
     var $collapse = document.querySelector('.navbar-collapse');
 
-    var __HuxNav__ = {
+    var __HujNav__ = {
         close: function(){
             $navbar.className = " ";
             // wait until animation end.
@@ -121,9 +121,9 @@
     // Bind Event
     $toggle.addEventListener('click', function(e){
         if ($navbar.className.indexOf('in') > 0) {
-            __HuxNav__.close()
+            __HujNav__.close()
         }else{
-            __HuxNav__.open()
+            __HujNav__.open()
         }
     })
 
@@ -134,14 +134,14 @@
      * $toggle/$collapse will break global delegation.
      *
      * Instead, we use a 'e.target' filter to prevent handler
-     * added to document close HuxNav.
+     * added to document close HujNav.
      *
      * Also, we use 'click' instead of 'touchstart' as compromise
      */
     document.addEventListener('click', function(e){
         if(e.target == $toggle) return;
         if(e.target.className == 'icon-bar') return;
-        __HuxNav__.close();
+        __HujNav__.close();
     })
 </script>
 
@@ -157,7 +157,7 @@
         background-image: url('/img/post-bg-digital-native.jpg')
     }
 
-    
+
 </style>
 <header class="intro-header" >
     <div class="header-mask"></div>
@@ -166,20 +166,20 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <div class="tags">
-                        
-                        <a class="tag" href="/tags/#hUX 随想录" title="hUX 随想录">hUX 随想录</a>
-                        
+
+                        <a class="tag" href="/tags/#Huj 随想录" title="Huj 随想录">Huj 随想录</a>
+
                         <a class="tag" href="/tags/#职业病" title="职业病">职业病</a>
-                        
+
                         <a class="tag" href="/tags/#交互设计" title="交互设计">交互设计</a>
-                        
+
                     </div>
-                    <h1>hUX 随想录（一）：Digital native 数字原住民</h1>
-                    
-                    
+                    <h1>Huj 随想录（一）：Digital native 数字原住民</h1>
+
+
                     <h2 class="subheading"> 两岁的侄女天天叫着手机手机 </h2>
-                    
-                    <span class="meta">Posted by Hux on March 25, 2015</span>
+
+                    <span class="meta">Posted by Huj on March 25, 2015</span>
                 </div>
             </div>
         </div>
@@ -205,14 +205,14 @@
 
 <p>从 2010 年 iPhone 4 横空出世席卷中国，到时隔不到半月的 Apple 2015 发布会。短短几年里，身边就几乎再也看不到“非智能手机”的身影了。</p>
 
-<p>想想发布那时（2010.6.8），博主应该还是一个高一小屁孩，等着暑假快点到来。虽然父上大人用着 iPhone 3GS ，不过那时我对 Apple 可没啥感觉，还用着后来被 Apple 干翻的 Nokia （5320），抱着算是被 Apple 干翻的 IBM ，偶尔玩玩后来被 Apple 干翻的 Adobe Flash……<br />
+<p>想想发布那时（2010.6.8），博主应该还是一个高一小屁孩，等着暑假快点到来。虽然父上大人用着 iPhone 3GS ，不过那时我对 Apple 可没啥感觉，还用着后来被 Apple 干翻的 Nokia （5320），抱着算是被 Apple 干翻的 IBM ，偶尔玩玩后来被 Apple 干翻的 Adobe Flash……
 虽然不是含着着金 iPhone 出生的一代，但好歹也算是摸着电脑长大的一代人，估摸着也算是 <strong>Digital native</strong> 了。你说这词是什么意思？别急，我们慢慢说。</p>
 
 <hr />
 
 <h2 id="section-1">正文</h2>
 
-<p>今年暑假回了两个老家，也看望了不少长辈。<br />
+<p>今年暑假回了两个老家，也看望了不少长辈。
 长辈们的手机果然都进行了可以想见的升级，除了爷爷奶奶辈外，清一色的 iPhone 或者 Android 4.2+ ，呃，没有 WP。</p>
 
 <p>智能手机啊智能手机，Smart Phone —— 聪明又能干的手机。可是每每我看到年龄稍微大点的长辈们顶着一附花镜，瞪大了眼睛，一只手托着，另一只手则伸出一根手指小心翼翼得戳着硕大的屏幕时，我就瞬间觉得这哪里是 Smart ，分明是 Stupid Phone 。于是我就看着父辈们不厌其烦得教着老人家如何解锁，如何打电话，回短信。却又常常要像子女们请教微信里的图片存到了哪（这基本都是 Android 的毛病），朋友圈的文章如何分享转发，视频和小视频为什么不一样，视频通话怎么玩这一类“高级问题”。</p>
@@ -220,7 +220,7 @@
 <p>这现象既尴尬又有趣，至少我 10+ 岁时还觉得自己什么都得请教父母。可是这一代孩子，居然能天天被父母请教手机问题然后理直气壮得回一句：“你怎么连这都不会？”</p>
 
 <p><br />
-<strong>最让我惊讶的还是我两岁的小侄女阿布。</strong><br />
+<strong>最让我惊讶的还是我两岁的小侄女阿布。</strong>
 两岁的小孩子，刚刚能跑能跳，学会说话也不久，甚是可爱。</p>
 
 <p>第一次感受阿布的神奇，是跟阿布和阿布爸（姐夫）在车的后座上坐着，阿布突然就向姐夫喊起了“手机，要手机…”。“就玩一会儿哦” 于是姐夫从口袋里掏出了 iPhone ，放到了比手机小好几号的小手上。我第一反应只是觉得好玩，大概小孩子觉得这个黑漆漆但是又能被点亮的“玩具”很好玩吧，姐夫和姐姐又无时不在教小孩子认东西，小孩子记得这个“玩具”叫作手机也很正常。</p>
@@ -235,16 +235,16 @@
 
 <p><strong>我确信阿布已经在无数次学习中完美得理解了 Home 键的含义。</strong>阿布知道主屏上的每一个长得一样的东西（App Icon）都可以点击，点击之后就会进入一个新的东西，如果阿布不喜欢，她知道按 Home 键返回主屏。</p>
 
-<p>阿布不完全具备分辨众多 icon 的能力，但唯独最喜欢“照片”这个应用，她总是可以在几次划屏之后找到并打开它。<br />
+<p>阿布不完全具备分辨众多 icon 的能力，但唯独最喜欢“照片”这个应用，她总是可以在几次划屏之后找到并打开它。
 <strong>可以说理解下图 “主屏幕与应用” 这样的一级逻辑是相对比较轻松的，而且 Home 键作为物理按键，认知成本也比屏幕中的虚拟按钮要低得多。</strong></p>
 
 <pre>
     Icon
 主屏幕 ⇌ 应用
-    Home 
+    Home
 </pre>
 
-<p>可是接下来阿布在照片应用内的表现就足以说明问题：阿布不但能够对“照片方块”进行归类学习，知道<strong>“既然一张照片可以点开，那么每张都是可以的”</strong>。阿布居然还学会了 <strong>Back 按键</strong>的使用！<br />
+<p>可是接下来阿布在照片应用内的表现就足以说明问题：阿布不但能够对“照片方块”进行归类学习，知道<strong>“既然一张照片可以点开，那么每张都是可以的”</strong>。阿布居然还学会了 <strong>Back 按键</strong>的使用！
 要知道阿布是一定不认识 Back 箭头右边的文字的。我猜测阿布可能是通过空间位置记忆（屏幕左上角），也有可能是通过图形记忆的（要知道人对图形的认知能力要远高于文字）。总之无论如何，阿布学会了 Back ，并可以进行下图这样“如此复杂的操作”了：</p>
 
 <pre>
@@ -263,17 +263,17 @@
 
 <p>这就是我们常说的<strong>物理隐喻</strong>，小孩子不知道物理也不知道什么隐喻，But it works.</p>
 
-<p>不过让我惊讶的不是这个，我 2 岁的时候要是有 iPhone ，我应该也是能那么瞎扒拉一两下的吧……<br />
+<p>不过让我惊讶的不是这个，我 2 岁的时候要是有 iPhone ，我应该也是能那么瞎扒拉一两下的吧……
 真正让我觉得非写此文不可的是：有一次，我给阿布玩我的 iPhone ，阿布照常打开了相册开始翻，<strong>说时迟那时快，来了一条微信通知！</strong></p>
 
 <p>对对对，就是那个从上往下滑下来 ↓↓↓↓ 的 Push Notification.</p>
 
 <pre>
-微信 
-Kant 给你发了一个红包 
+微信
+Kant 给你发了一个红包
 </pre>
 
-<p><strong>接着高潮就来了，阿布非常淡定的伸出小手，把推送给我顶 ↑↑↑↑ 回去了！！</strong><br />
+<p><strong>接着高潮就来了，阿布非常淡定的伸出小手，把推送给我顶 ↑↑↑↑ 回去了！！</strong>
 卧槽你们一定不能体会我当时有多惊讶。</p>
 
 <p><strong>隐喻啊！从上面掉下来的东西，不 想 要 的 话 就可以划回去好吗。</strong> 小孩子对数字世界交互隐喻的理解，真是完爆了不知道多少 Digital immigrant (下文会解释) 。</p>
@@ -291,7 +291,7 @@ Kant 给你发了一个红包
 <p>世界观是一个需要长时间建立起来的东西，<strong>当我们跟小孩子一样对世界最为无知时，我们也对世界最为好奇，于是眼前的一切都一股进脑。然后大脑进行着快速的记忆和学习，逐渐形成了你对这个世界的认知。</strong>
 所以世界观也是一个很顽固的东西，已经建立起来的部分很难摧毁，新的东西也就没有太多立足之处 —— 这也算是解释了为什么小孩子学习数字设备如此之快，而越是大龄就相对越难接受（当然这其实与不同年龄大脑的生命活动有关系，这里只是比喻的说法）</p>
 
-<p>说到这里，我们终于可以回归最初的问题：<br />
+<p>说到这里，我们终于可以回归最初的问题：
 什么是 Digital native ？还有与之对应的 Digital immigrant ?</p>
 
 <blockquote>
@@ -316,13 +316,13 @@ Kant 给你发了一个红包
 
                 <hr>
 
-                
+
                 <!-- 多说 Share start -->
                 </style>
                 <div class="ds-share"
                     style="text-align: right"
                     data-thread-key="/2015/03/25/digital-native"
-                    data-title="hUX 随想录（一）：Digital native 数字原住民"
+                    data-title="Huj 随想录（一）：Digital native 数字原住民"
                     data-url="http://huangxuan.me/2015/03/25/digital-native/"
                     data-images="http://huangxuan.me/img/post-bg-digital-native.jpg"
                     data-content="
@@ -331,7 +331,7 @@ Kant 给你发了一个红包
 
 前言
 
-从 2... | 黄玄的博客 | Hux Blog " >
+从 2... | 胡俊的博客 | Hux Blog " >
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
                         <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
@@ -345,47 +345,47 @@ Kant 给你发了一个红包
                 <hr>
                 </div>
                 <!-- 多说 Share end-->
-                
+
 
 
                 <ul class="pager">
-                    
+
                     <li class="previous">
                         <a href="/2015/03/10/apple-event-2015/" data-toggle="tooltip" data-placement="top" title="「知乎」如何评价 2015 年 3 月 9 日 Apple 春季发布会？">
                         Previous<br>
                         <span>「知乎」如何评价 2015 年 3 月 9 日 Apple 春季发布会？</span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li class="next">
                         <a href="/2015/03/31/e2e_user_scenarios/" data-toggle="tooltip" data-placement="top" title="Definition of End to End User Scenarios">
                         Next<br>
                         <span>Definition of End to End User Scenarios</span>
                         </a>
                     </li>
-                    
+
                 </ul>
 
 
-                
+
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
                         data-thread-key="/2015/03/25/digital-native"
-                        data-title="hUX 随想录（一）：Digital native 数字原住民"
+                        data-title="Huj 随想录（一）：Digital native 数字原住民"
                         data-url="http://huangxuan.me/2015/03/25/digital-native/" >
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
-                
 
-                
 
-            </div>  
+
+
+            </div>
 
     <!-- Side Catalog Container -->
-        
+
             <div class="
                 col-lg-2 col-lg-offset-0
                 visible-lg-block
@@ -399,7 +399,7 @@ Kant 给你发了一个红包
                     <ul class="catalog-body"></ul>
                 </div>
             </div>
-        
+
 
     <!-- Sidebar Container -->
             <div class="
@@ -408,144 +408,144 @@ Kant 给你发了一个红包
                 sidebar-container">
 
                 <!-- Featured Tags -->
-                
+
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-        				
-                            
+
+
                 				<a href="/tags/#知乎" title="知乎" rel="7">
                                     知乎
                                 </a>
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
                 				<a href="/tags/#Android" title="Android" rel="2">
                                     Android
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#交互设计" title="交互设计" rel="4">
                                     交互设计
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#阿里巴巴" title="阿里巴巴" rel="3">
                                     阿里巴巴
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#前端开发" title="前端开发" rel="9">
                                     前端开发
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#职业病" title="职业病" rel="3">
                                     职业病
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#生活" title="生活" rel="2">
                                     生活
                                 </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#hUX 随想录" title="hUX 随想录" rel="2">
-                                    hUX 随想录
+
+
+
+
+
+
+
+
+
+                				<a href="/tags/#Huj 随想录" title="Huj 随想录" rel="2">
+                                    Huj 随想录
                                 </a>
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
                 				<a href="/tags/#UX Design" title="UX Design" rel="3">
                                     UX Design
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#OS" title="OS" rel="2">
                                     OS
                                 </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
+
+
+
+
+
+
                 				<a href="/tags/#JavaScript" title="JavaScript" rel="6">
                                     JavaScript
                                 </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
+
+
+
+
+
+
+
+
                 				<a href="/tags/#译文" title="译文" rel="2">
                                     译文
                                 </a>
-                            
-        				
-                            
-        				
+
+
+
+
         			</div>
                 </section>
-                
+
 
                 <!-- Friends Blog -->
-                
+
                 <hr>
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
-                    
+
                         <li><a href="http://qianduan.guru/">前端外刊评论</a></li>
-                    
+
                         <li><a href="http://lingyu.wang/">天镶的博客</a></li>
-                    
+
                         <li><a href="http://hmqk1995.github.io">Luke的自留地</a></li>
-                    
+
                         <li><a href="http://ebnbin.com/">Ebn's Blog</a></li>
-                    
+
                         <li><a href="http://blog.smdcn.net">SmdCn's Blog</a></li>
-                    
+
                         <li><a href="http://xieminis.me/">解旻的博客</a></li>
-                    
+
                         <li><a href="http://dhong.co">DHong Say</a></li>
-                    
+
                         <li><a href="http://ingf.github.io/">尹峰以为</a></li>
-                    
+
                         <li><a href="http://wepiaofei.github.io/blog/">前端神盾局</a></li>
-                    
+
                 </ul>
-                
+
             </div>
         </div>
     </div>
@@ -555,7 +555,7 @@ Kant 给你发了一个红包
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _user = 'huxblog';
 
     // duoshuo comment query.
@@ -612,17 +612,18 @@ Kant 给你发了一个红包
 </style>
 
 
+
     <!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-                    
-                    
 
-                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
-                    
+
+
+                    <!-- add Weibo, Zhihu by Huj, add target = "_blank" to <a> by Huj -->
+
                     <li>
                         <a target="_blank" href="https://www.zhihu.com/people/huxpro">
                             <span class="fa-stack fa-lg">
@@ -631,8 +632,8 @@ Kant 给你发了一个红包
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li>
                         <a target="_blank" href="http://weibo.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -641,10 +642,10 @@ Kant 给你发了一个红包
                             </span>
                         </a>
                     </li>
-                    
 
 
-                    
+
+
                     <li>
                         <a target="_blank" href="https://www.facebook.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -653,8 +654,8 @@ Kant 给你发了一个红包
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li>
                         <a target="_blank" href="https://github.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -663,17 +664,17 @@ Kant 给你发了一个红包
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                 </ul>
                 <p class="copyright text-muted">
                     Copyright &copy; Huj Blog 2016
                     <br>
-                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    Theme by <a href="http://huangxuan.me">Huj</a> |
                     <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"
                         frameborder="0" scrolling="0" width="91px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                        src="https://ghbtns.com/github-btn.html?user=Hujpro&repo=Hujpro.github.io&type=star&count=true" >
                     </iframe>
                 </p>
             </div>
@@ -688,7 +689,7 @@ Kant 给你发了一个红包
 <script src="/js/bootstrap.min.js "></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="/js/hux-blog.min.js "></script>
+<script src="/js/Huj-blog.min.js "></script>
 
 
 <!-- async load function -->
@@ -703,15 +704,15 @@ Kant 给你发了一个红包
     }
 </script>
 
-<!-- 
-     Because of the native support for backtick-style fenced code blocks 
-     right within the Markdown is landed in Github Pages, 
-     From V1.6, There is no need for Highlight.js, 
-     so Huxblog drops it officially.
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Hujblog drops it officially.
 
-     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
-     - https://help.github.com/articles/creating-and-highlighting-code-blocks/ 
-     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers   
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
 -->
 <!--
     <script>
@@ -749,7 +750,7 @@ Kant 给你发了一个红包
 <!-- Google Analytics -->
 
 <script>
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _gaId = 'UA-49627206-1';
     var _gaDomain = 'huangxuan.me';
 
@@ -768,7 +769,7 @@ Kant 给你发了一个红包
 <!-- Baidu Tongji -->
 
 <script>
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _baId = '4cc1f2d8f3067386cc5cdb626a202900';
 
     // Originial
@@ -798,7 +799,7 @@ Kant 给你发了一个红包
             l = $('<li class="'+n+'_nav"></li>').append(c);
             $(selector).append(l);
         });
-        return true;    
+        return true;
     }
 
     generateCatalog(".catalog-body");
@@ -811,7 +812,7 @@ Kant 给你发了一个红包
 
     /*
      * Doc: https://github.com/davist11/jQuery-One-Page-Nav
-     * Fork by Hux to support padding
+     * Fork by Huj to support padding
      */
     async("/js/jquery.nav.js", function () {
         $('.catalog-body').onePageNav({

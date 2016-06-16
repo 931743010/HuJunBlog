@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。">
-    <meta name="keywords"  content="黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友">
+    <meta name="description" content="关于前端与设计、黑客与画家 | 胡俊，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux胡俊 的个人博客，与你一起发现更大的世界。">
+    <meta name="keywords"  content="胡俊, Hux胡俊, Hux, 鬼栈, huxpro, @huxpro, 胡俊的博客, Hux Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Unix/Linux 扫盲笔记 - 黄玄的博客 | Hux Blog</title>
+    <title>Unix/Linux 扫盲笔记 - 胡俊的博客 | Hux Blog</title>
 
     <link rel="canonical" href="http://huangxuan.me/2015/04/14/unix-linux-note/">
 
@@ -18,18 +18,18 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/hux-blog.min.css">
+    <link rel="stylesheet" href="/css/Huj-blog.min.css">
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
 
     <!-- Custom Fonts -->
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- Hux change font-awesome CDN to qiniu -->
+    <!-- Huj change font-awesome CDN to qiniu -->
     <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
-    <!-- Hux Delete, sad but pending in China
+    <!-- Huj Delete, sad but pending in China
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
     css'>
@@ -66,25 +66,25 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="huxblog_navbar">
+        <div id="Hujblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Home</a>
                     </li>
-                    
+
                     <li>
                         <a href="/about/">About</a>
                     </li>
-                    
+
                     <li>
                         <a href="/portfolio/">Portfolio</a>
                     </li>
-                    
+
                     <li>
                         <a href="/tags/">Tags</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -98,10 +98,10 @@
     // in high-perf jank-free CSS3 implementation
     var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
-    var $navbar = document.querySelector('#huxblog_navbar');
+    var $navbar = document.querySelector('#Hujblog_navbar');
     var $collapse = document.querySelector('.navbar-collapse');
 
-    var __HuxNav__ = {
+    var __HujNav__ = {
         close: function(){
             $navbar.className = " ";
             // wait until animation end.
@@ -121,9 +121,9 @@
     // Bind Event
     $toggle.addEventListener('click', function(e){
         if ($navbar.className.indexOf('in') > 0) {
-            __HuxNav__.close()
+            __HujNav__.close()
         }else{
-            __HuxNav__.open()
+            __HujNav__.open()
         }
     })
 
@@ -134,14 +134,14 @@
      * $toggle/$collapse will break global delegation.
      *
      * Instead, we use a 'e.target' filter to prevent handler
-     * added to document close HuxNav.
+     * added to document close HujNav.
      *
      * Also, we use 'click' instead of 'touchstart' as compromise
      */
     document.addEventListener('click', function(e){
         if(e.target == $toggle) return;
         if(e.target.className == 'icon-bar') return;
-        __HuxNav__.close();
+        __HujNav__.close();
     })
 </script>
 
@@ -157,7 +157,7 @@
         background-image: url('/img/post-bg-unix-linux.jpg')
     }
 
-    
+
 </style>
 <header class="intro-header" >
     <div class="header-mask"></div>
@@ -166,20 +166,20 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <div class="tags">
-                        
+
                         <a class="tag" href="/tags/#OS" title="OS">OS</a>
-                        
+
                         <a class="tag" href="/tags/#Unix" title="Unix">Unix</a>
-                        
+
                         <a class="tag" href="/tags/#Linux" title="Linux">Linux</a>
-                        
+
                     </div>
                     <h1>Unix/Linux 扫盲笔记</h1>
-                    
-                    
+
+
                     <h2 class="subheading">不适合人类阅读，非常水的自我笔记</h2>
-                    
-                    <span class="meta">Posted by Hux on April 14, 2015</span>
+
+                    <span class="meta">Posted by Huj on April 14, 2015</span>
                 </div>
             </div>
         </div>
@@ -212,7 +212,7 @@
 <ul>
   <li>
     <h4 id="bell-labs">Bell Labs</h4>
-    <p>Bell 和 AT&amp;A 在那时已经是一家了，可以看到那时的通信公司真是一线 IT 公司呢。 
+    <p>Bell 和 AT&amp;A 在那时已经是一家了，可以看到那时的通信公司真是一线 IT 公司呢。
 <strong>C 语言也是 Bell Labs 的产物</strong>，从一开始就是为了用于 Unix 而设计出来的。所以 Unix （在 73 年用 C 重写）在高校流行后，C 语言也获得了广泛支持。</p>
   </li>
 </ul>
@@ -238,12 +238,12 @@
   </li>
   <li>
     <h4 id="nextstep">NeXTSTEP</h4>
-    <p>An <strong>object-oriented</strong>, multitasking OS. Low-level C but High-level OC language and runtime the first time, combined with an <strong>OO aplication layer</strong> and including several “kits”.  <br />
+    <p>An <strong>object-oriented</strong>, multitasking OS. Low-level C but High-level OC language and runtime the first time, combined with an <strong>OO aplication layer</strong> and including several “kits”.
 大家都知道 NeXT 是 Steve Jobs 被 forced out of Apple 后和 a few of his coworkers 创办的，所以 <strong>NeXTSTEP 绝对是证明 Jobs 实力的作品。</strong></p>
   </li>
   <li>
     <h4 id="darwin">Darwin</h4>
-    <p><a href="http://en.wikipedia.org/wiki/Darwin_(operating_system\)">Darwin</a>, the core set of components upon which Mac OS X and iOS based, mostly POSIX compatible, but has never, by itself, been certified as being compatible with any version of <strong>POSIX</strong>. (OS X, since Leopard, has been certified as compatible with the Single UNIX Specification version 3)<br />
+    <p><a href="http://en.wikipedia.org/wiki/Darwin_(operating_system\)">Darwin</a>, the core set of components upon which Mac OS X and iOS based, mostly POSIX compatible, but has never, by itself, been certified as being compatible with any version of <strong>POSIX</strong>. (OS X, since Leopard, has been certified as compatible with the Single UNIX Specification version 3)
 <strong>所以说 Mac OS X 算是很正统 Unix 的了</strong></p>
   </li>
   <li>
@@ -290,7 +290,7 @@
   <p>A Unix-like (sometimes referred to as UN*X or *nix) operating system is one that behaves in a manner similar to a Unix system, while not necessarily conforming to or being certified to any version of the <strong>Single UNIX Specification</strong>.</p>
 </blockquote>
 
-<p>There is no standard for defining the term.<br />
+<p>There is no standard for defining the term.
 其实 Unix-like 是个相对模糊的概念：</p>
 
 <ul>
@@ -372,7 +372,7 @@
 
 <p>Android is a mobile OS based on <strong>Linux Kernel</strong>, so it’s definitely <strong>Unix-like</strong>.</p>
 
-<p><strong>Linux is under GPL so Android has to be open source</strong>. 
+<p><strong>Linux is under GPL so Android has to be open source</strong>.
 Android’s source code is released by Google under open source licenses, although most Android devices ultimately ship with a combination of open source and proprietary software, including proprietary software developed and licensed by Google <em>(GMS are all proprietary)</em></p>
 
 <h4 id="android-kernel">Android Kernel</h4>
@@ -440,7 +440,7 @@ Android’s source code is released by Google under open source licenses, althou
 
                 <hr>
 
-                
+
                 <!-- 多说 Share start -->
                 </style>
                 <div class="ds-share"
@@ -456,7 +456,7 @@ Android’s source code is released by Google under open source licenses, althou
 Unix
 
 
-  Uni... | 黄玄的博客 | Hux Blog " >
+  Uni... | 胡俊的博客 | Hux Blog " >
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
                         <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
@@ -470,30 +470,30 @@ Unix
                 <hr>
                 </div>
                 <!-- 多说 Share end-->
-                
+
 
 
                 <ul class="pager">
-                    
+
                     <li class="previous">
                         <a href="/2015/03/31/e2e_user_scenarios/" data-toggle="tooltip" data-placement="top" title="Definition of End to End User Scenarios">
                         Previous<br>
                         <span>Definition of End to End User Scenarios</span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li class="next">
-                        <a href="/2015/04/15/os-metro/" data-toggle="tooltip" data-placement="top" title="hUX 随想录（二）：操作系统的浪漫主义 —— Metro 篇">
+                        <a href="/2015/04/15/os-metro/" data-toggle="tooltip" data-placement="top" title="Huj 随想录（二）：操作系统的浪漫主义 —— Metro 篇">
                         Next<br>
-                        <span>hUX 随想录（二）：操作系统的浪漫主义 —— Metro 篇</span>
+                        <span>Huj 随想录（二）：操作系统的浪漫主义 —— Metro 篇</span>
                         </a>
                     </li>
-                    
+
                 </ul>
 
 
-                
+
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
@@ -503,14 +503,14 @@ Unix
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
-                
 
-                
 
-            </div>  
+
+
+            </div>
 
     <!-- Side Catalog Container -->
-        
+
             <div class="
                 col-lg-2 col-lg-offset-0
                 visible-lg-block
@@ -524,7 +524,7 @@ Unix
                     <ul class="catalog-body"></ul>
                 </div>
             </div>
-        
+
 
     <!-- Sidebar Container -->
             <div class="
@@ -533,144 +533,144 @@ Unix
                 sidebar-container">
 
                 <!-- Featured Tags -->
-                
+
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-        				
-                            
+
+
                 				<a href="/tags/#知乎" title="知乎" rel="7">
                                     知乎
                                 </a>
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
                 				<a href="/tags/#Android" title="Android" rel="2">
                                     Android
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#交互设计" title="交互设计" rel="4">
                                     交互设计
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#阿里巴巴" title="阿里巴巴" rel="3">
                                     阿里巴巴
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#前端开发" title="前端开发" rel="9">
                                     前端开发
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#职业病" title="职业病" rel="3">
                                     职业病
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#生活" title="生活" rel="2">
                                     生活
                                 </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#hUX 随想录" title="hUX 随想录" rel="2">
-                                    hUX 随想录
+
+
+
+
+
+
+
+
+
+                				<a href="/tags/#Huj 随想录" title="Huj 随想录" rel="2">
+                                    Huj 随想录
                                 </a>
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
                 				<a href="/tags/#UX Design" title="UX Design" rel="3">
                                     UX Design
                                 </a>
-                            
-        				
-                            
+
+
+
                 				<a href="/tags/#OS" title="OS" rel="2">
                                     OS
                                 </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
+
+
+
+
+
+
                 				<a href="/tags/#JavaScript" title="JavaScript" rel="6">
                                     JavaScript
                                 </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
+
+
+
+
+
+
+
+
+
+
+
+
+
                 				<a href="/tags/#译文" title="译文" rel="2">
                                     译文
                                 </a>
-                            
-        				
-                            
-        				
+
+
+
+
         			</div>
                 </section>
-                
+
 
                 <!-- Friends Blog -->
-                
+
                 <hr>
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
-                    
+
                         <li><a href="http://qianduan.guru/">前端外刊评论</a></li>
-                    
+
                         <li><a href="http://lingyu.wang/">天镶的博客</a></li>
-                    
+
                         <li><a href="http://hmqk1995.github.io">Luke的自留地</a></li>
-                    
+
                         <li><a href="http://ebnbin.com/">Ebn's Blog</a></li>
-                    
+
                         <li><a href="http://blog.smdcn.net">SmdCn's Blog</a></li>
-                    
+
                         <li><a href="http://xieminis.me/">解旻的博客</a></li>
-                    
+
                         <li><a href="http://dhong.co">DHong Say</a></li>
-                    
+
                         <li><a href="http://ingf.github.io/">尹峰以为</a></li>
-                    
+
                         <li><a href="http://wepiaofei.github.io/blog/">前端神盾局</a></li>
-                    
+
                 </ul>
-                
+
             </div>
         </div>
     </div>
@@ -680,7 +680,7 @@ Unix
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _user = 'huxblog';
 
     // duoshuo comment query.
@@ -737,17 +737,18 @@ Unix
 </style>
 
 
+
     <!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-                    
-                    
 
-                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
-                    
+
+
+                    <!-- add Weibo, Zhihu by Huj, add target = "_blank" to <a> by Huj -->
+
                     <li>
                         <a target="_blank" href="https://www.zhihu.com/people/huxpro">
                             <span class="fa-stack fa-lg">
@@ -756,8 +757,8 @@ Unix
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li>
                         <a target="_blank" href="http://weibo.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -766,10 +767,10 @@ Unix
                             </span>
                         </a>
                     </li>
-                    
 
 
-                    
+
+
                     <li>
                         <a target="_blank" href="https://www.facebook.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -778,8 +779,8 @@ Unix
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                     <li>
                         <a target="_blank" href="https://github.com/huxpro">
                             <span class="fa-stack fa-lg">
@@ -788,17 +789,17 @@ Unix
                             </span>
                         </a>
                     </li>
-                    
-                    
+
+
                 </ul>
                 <p class="copyright text-muted">
                     Copyright &copy; Huj Blog 2016
                     <br>
-                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    Theme by <a href="http://huangxuan.me">Huj</a> |
                     <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"
                         frameborder="0" scrolling="0" width="91px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                        src="https://ghbtns.com/github-btn.html?user=Hujpro&repo=Hujpro.github.io&type=star&count=true" >
                     </iframe>
                 </p>
             </div>
@@ -813,7 +814,7 @@ Unix
 <script src="/js/bootstrap.min.js "></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="/js/hux-blog.min.js "></script>
+<script src="/js/Huj-blog.min.js "></script>
 
 
 <!-- async load function -->
@@ -828,15 +829,15 @@ Unix
     }
 </script>
 
-<!-- 
-     Because of the native support for backtick-style fenced code blocks 
-     right within the Markdown is landed in Github Pages, 
-     From V1.6, There is no need for Highlight.js, 
-     so Huxblog drops it officially.
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Hujblog drops it officially.
 
-     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
-     - https://help.github.com/articles/creating-and-highlighting-code-blocks/ 
-     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers   
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
 -->
 <!--
     <script>
@@ -874,7 +875,7 @@ Unix
 <!-- Google Analytics -->
 
 <script>
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _gaId = 'UA-49627206-1';
     var _gaDomain = 'huangxuan.me';
 
@@ -893,7 +894,7 @@ Unix
 <!-- Baidu Tongji -->
 
 <script>
-    // dynamic User by Hux
+    // dynamic User by Huj
     var _baId = '4cc1f2d8f3067386cc5cdb626a202900';
 
     // Originial
@@ -923,7 +924,7 @@ Unix
             l = $('<li class="'+n+'_nav"></li>').append(c);
             $(selector).append(l);
         });
-        return true;    
+        return true;
     }
 
     generateCatalog(".catalog-body");
@@ -936,7 +937,7 @@ Unix
 
     /*
      * Doc: https://github.com/davist11/jQuery-One-Page-Nav
-     * Fork by Hux to support padding
+     * Fork by Huj to support padding
      */
     async("/js/jquery.nav.js", function () {
         $('.catalog-body').onePageNav({
