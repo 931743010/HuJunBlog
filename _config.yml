@@ -1,83 +1,83 @@
-# Site settings
-title: Hu Jun
-header-img: img/home-bg.jpg
-email: jia85860161@163.com
-description: "The official blog of Hu Jun"
-baseurl: ""
-url: "http://ioshj.com"
-# twitter_username: davidmillerskt
-# github_username:  davidtmiller
+# # Site settings
+# title: Hu Jun
+# header-img: img/home-bg.jpg
+# email: jia85860161@163.com
+# description: "The official blog of Hu Jun"
+# baseurl: ""
+# url: "http://ioshj.com"
+# # twitter_username: davidmillerskt
+# # github_username:  davidtmiller
 
-# Build settings
-markdown: kramdown
-highlighter: pygments
-permalink: pretty
-paginate: 15
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+# # Build settings
+# markdown: kramdown
+# highlighter: pygments
+# permalink: pretty
+# paginate: 15
+# exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-# Jekyll Redirect From Plugin for Redirects from Start Bootstrap Old Version
-gems:
-  - jekyll-paginate
-
-
-# Analytics settings
-# Baidu Analytics
-ba_track_id: 0e16ba626977a2b334f388205f4ce425
-# Google Analytics
-ga_track_id: 'UA-79455212-1'            # Format: UA-xxxxxx-xx
-ga_domain: ioshj.com
-
-# weibo_share: true
-
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# # Jekyll Redirect From Plugin for Redirects from Start Bootstrap Old Version
+# gems:
+#   - jekyll-paginate
 
 
+# # Analytics settings
+# # Baidu Analytics
+# ba_track_id: 0e16ba626977a2b334f388205f4ce425
+# # Google Analytics
+# ga_track_id: 'UA-79455212-1'            # Format: UA-xxxxxx-xx
+# ga_domain: ioshj.com
 
-# Disqus settings
-#disqus_username: _your_disqus_short_name_
+# # weibo_share: true
 
-# Duoshuo settings
-duoshuo_username: HuJun
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+# anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
-# Skills
-skills: [
-  {
-    skill: "HTML",
-    dur: "36",
-    score: "85",
-    color: "#16a085"
-  },{
-    skill: "CSS",
-    dur: "36",
-    score: "75",
-    color: "#27ae60"
-  },{
-    skill: "Javascript",
-    dur: "36",
-    score: "85",
-    color: "#2980b9"
-  },{
-    skill: "Python",
-    dur: "24",
-    score: "75",
-    color: "#8e44ad"
-  },{
-    skill: "Git",
-    dur: "24",
-    score: "70",
-    color: "#2c3e50"
-  },{
-    skill: "Linux/Mac",
-    dur: "24",
-    score: "70",
-    color: "#f39c12"
-  },{
-    skill: "Nodejs",
-    dur: "24",
-    score: "70",
-    color: "#c0392b"
-  }
-]
+
+# # Disqus settings
+# #disqus_username: _your_disqus_short_name_
+
+# # Duoshuo settings
+# duoshuo_username: HuJun
+# # Share component is depend on Comment so we can NOT use share only.
+# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+# # Skills
+# skills: [
+#   {
+#     skill: "HTML",
+#     dur: "36",
+#     score: "85",
+#     color: "#16a085"
+#   },{
+#     skill: "CSS",
+#     dur: "36",
+#     score: "75",
+#     color: "#27ae60"
+#   },{
+#     skill: "Javascript",
+#     dur: "36",
+#     score: "85",
+#     color: "#2980b9"
+#   },{
+#     skill: "Python",
+#     dur: "24",
+#     score: "75",
+#     color: "#8e44ad"
+#   },{
+#     skill: "Git",
+#     dur: "24",
+#     score: "70",
+#     color: "#2c3e50"
+#   },{
+#     skill: "Linux/Mac",
+#     dur: "24",
+#     score: "70",
+#     color: "#f39c12"
+#   },{
+#     skill: "Nodejs",
+#     dur: "24",
+#     score: "70",
+#     color: "#c0392b"
+#   }
+# ]
