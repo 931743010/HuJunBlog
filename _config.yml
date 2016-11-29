@@ -4,7 +4,7 @@ header-img: img/home-bg.jpg
 email: jia85860161@163.com
 description: "The official blog of Hu Jun"
 baseurl: ""
-url: "http://ioshj.com"
+#url: "http://ioshj.com"
 # twitter_username: davidmillerskt
 # github_username:  davidtmiller
 
@@ -25,7 +25,7 @@ gems:
 ba_track_id: 0e16ba626977a2b334f388205f4ce425
 # Google Analytics
 ga_track_id: 'UA-79455212-1'            # Format: UA-xxxxxx-xx
-ga_domain: ioshj.com
+#ga_domain: ioshj.com
 
 # weibo_share: true
 
